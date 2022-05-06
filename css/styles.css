@@ -508,6 +508,7 @@ ul {
 .footer-menu {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .logo.studio-footer {
