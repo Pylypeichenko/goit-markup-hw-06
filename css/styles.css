@@ -570,7 +570,7 @@ ul {
 }
 
 .form-join-box {
-  margin-left: 93px;
+  margin-left: auto;
   width: 570px;
   min-height: 86px;
 }
@@ -817,6 +817,14 @@ ul {
 
 .icon-check {
   fill: transparent;
+}
+
+.policy-label > span:hover {
+  border-color: var(--accent-color);
+}
+
+.policy-label > span:focus {
+  border-color: var(--accent-color);
 }
 
 .input-check:checked + .policy-label span {
