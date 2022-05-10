@@ -633,12 +633,9 @@ ul {
   background-color: var(--backdrop-bg-color);
   position: fixed;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -653,8 +650,10 @@ ul {
 
   width: 528px;
   min-height: 581px;
+  top: 50%;
+  left: 50%;
   position: relative;
-  transform: scale(1);
+  transform: translate(-50%, -50%) scale(1);
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -695,7 +694,7 @@ ul {
 }
 
 .backdrop.is-hidden .modal {
-  transform: scale(0);
+  transform: scale(0) 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
